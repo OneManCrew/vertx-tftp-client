@@ -23,7 +23,7 @@ TftpClient client =new TftpClient(vertx,tftpServerIp,port);//default port 69
 
 ####U pload files
 ````
-client.upload("C:\\pp.jpg",(progress)->{
+client.upload("filePath",(progress)->{
     //progress will update every change in the upload progress.
     },
     (result)->{

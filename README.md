@@ -14,3 +14,47 @@ Maven (in your pom.xml):
   <version>1.0</version>
 </dependency>
 ````
+
+###Creating TFTP Client
+````
+Vertx vertx = Vertx.vertx();
+TftpClient client =new TftpClient(vertx,tftpServerIp,port);//default port 69
+``````
+
+###Upload files
+````
+client.upload("C:\\pp.jpg",(progress)->{
+    //progress will update every change in the upload progress.
+    },
+    (result)->{
+    if (result.succeeded()) {
+        System.out.println("upload succeeded");
+      } else {
+        System.out.println("error upload file" + result.cause().getMessage());
+      }
+});
+````
+
+###Download file
+````
+client.download(fileName,downloadFoler,(result)->{
+    (result)->{
+        if (result.succeeded()) {
+            System.out.println("download succeeded");
+          } else {
+            System.out.println("error download file" + result.cause().getMessage());
+          }
+});
+````
+### Error Code Description
+In case of TttpError Exception this id the description for each error code:
+
+| ErrorCode |            Description            |
+|:---------:|:---------------------------------:|
+|     1     | File not found.                   |
+|     2     | Access violation.                 |
+|     3     | Disk full or allocation exceeded. |
+|     4     | Illegal TFTP operation.           |
+|     5     | Unknown transfer ID.              |
+|     6     | File already exists.              |
+|     7     | No such user.                     |

@@ -15,13 +15,13 @@ Maven (in your pom.xml):
 </dependency>
 ````
 
-###Creating TFTP Client
+####Creating TFTP Client
 ````
 Vertx vertx = Vertx.vertx();
 TftpClient client =new TftpClient(vertx,tftpServerIp,port);//default port 69
 ``````
 
-###Upload files
+####Upload files
 ````
 client.upload("C:\\pp.jpg",(progress)->{
     //progress will update every change in the upload progress.
@@ -35,7 +35,7 @@ client.upload("C:\\pp.jpg",(progress)->{
 });
 ````
 
-###Download file
+####Download file
 ````
 client.download(fileName,downloadFoler,(result)->{
     (result)->{
@@ -46,7 +46,7 @@ client.download(fileName,downloadFoler,(result)->{
           }
 });
 ````
-### Error Code Description
+####Error Code Description
 In case of TttpError Exception this id the description for each error code:
 
 | ErrorCode |            Description            |

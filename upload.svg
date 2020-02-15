@@ -6,7 +6,7 @@ Server->Client: ACK(0)
 Note left of Client:port X
 Client->Server: Data(block 1)
 Note right of Server:port Y
-Server->Client: ACK(0)
+Server->Client: ACK(1)
 Note left of Client:port X
 
 

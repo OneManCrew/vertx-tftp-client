@@ -58,3 +58,9 @@ In case of TttpError Exception this id the description for each error code:
 |     5     | Unknown transfer ID.              |
 |     6     | File already exists.              |
 |     7     | No such user.                     |
+
+#### TFTP Upload Protocol:
+![Upload diagram](upload.svg)
+
+#### TFTP Download Protocol:
+![Download diagram](download.svg)

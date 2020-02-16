@@ -27,6 +27,20 @@
         </repository>
     </distributionManagement>
 
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/OneManCrew/vertx-tftp-client.git</connection>
+        <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-source-plugin.git</developerConnection>
+        <url>https://github.com/OneManCrew/vertx-tftp-client.git/tree/${project.scm.tag}</url>
+        <tag>${version}</tag>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>io.vertx</groupId>
@@ -131,6 +145,24 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.1.1</version>
             </plugin>
         </plugins>
     </build>

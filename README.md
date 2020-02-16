@@ -32,7 +32,7 @@ Vertx vertx = Vertx.vertx();
 TftpClient client =new TftpClient(vertx,tftpServerIp,port);//default port 69
 ``````
 
-####U pload files
+#### Upload files
 ````
 client.upload("filePath",(progress)->{
     //progress will update every change in the upload progress.

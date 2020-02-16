@@ -14,7 +14,16 @@ Maven (in your pom.xml):
   <version>1.0</version>
 </dependency>
 ````
-
+Gradle:
+````
+implementation 'io.github.onemancrew:vertx-tftp-client:1.0'
+````
+ivy:
+````
+<dependency org="io.github.onemancrew" name="vertx-tftp-client" rev="1.0">
+	<artifact name="vertx-tftp-client" ext="pom"></artifact>
+</dependency>
+````
 #### Creating TFTP Client
 ````
 Vertx vertx = Vertx.vertx();

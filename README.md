@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [ ![Download](https://api.bintray.com/packages/onemancrew/vertx/vertx-tftp-client/images/download.svg?version=1.0) ](https://bintray.com/onemancrew/vertx/vertx-tftp-client/1.0/link)
 
-vertx-tftp-client is a simple  async tftp client which works with vert.x
+vertx-tftp-client is a simple  async tftp client which works with vert.x v3.
 
 The Following Java project implements the TFTP protocol and builds a TFTP client. Scope of the client is to upload and download files from a remote TFTP server.
 I have used Vert.x to implement this project as asynchronously.

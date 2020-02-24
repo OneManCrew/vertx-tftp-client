@@ -1,5 +1,6 @@
 # Vert.x TFTP Client
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.onemancrew/vertx-tftp-client.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.onemancrew%22%20AND%20a:%22vertx-tftp-client%22)
 [ ![Download](https://api.bintray.com/packages/onemancrew/vertx/vertx-tftp-client/images/download.svg?version=1.0) ](https://bintray.com/onemancrew/vertx/vertx-tftp-client/1.0/link)
 
 vertx-tftp-client is a simple  async tftp client which works with vert.x v3.
